@@ -9,7 +9,7 @@ public class CountWordFrequency {
 		System.out.println("Enter a string: ");
 		String s=sc.nextLine();
 		String[] word=s.split(" ");
-		final Treemap1<String, Integer> map1=new Treemap1<String, Integer>();
+		final Treemap<String, Integer> map1=new Treemap1<String, Integer>();
 		for(String w:word)
 		{
 			if(!map1.containsKey(w))
@@ -26,7 +26,7 @@ public class CountWordFrequency {
 						return -1;
 			    }
 		};
-		Treemap1<String, Integer> map2=new Treemap1<String, Integer>(comp);
+		Treemap<String, Integer> map2=new Treemap1<String, Integer>(comp);
 		map2.putAll(map1); 
 		for(map1.Entry<String,Integer> entry: map2.entrySet())
 		{
