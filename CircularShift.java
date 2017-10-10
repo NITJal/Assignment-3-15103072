@@ -8,7 +8,7 @@ public class CircularShift {
 		s=sc.nextLine();
 		String s1=new String();
 	    int p=0;
-	    while(x!=s.length())
+	    while(p!=s.length())
 		{
 			s1+=s.substring(1, s.length());
 			s1+=s.substring(0,1);
